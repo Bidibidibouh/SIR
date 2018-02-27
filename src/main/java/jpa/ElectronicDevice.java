@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
-public class ElectronicDevice {
+public class ElectronicDevice extends SmartDevice{
 
 	long id_ed;
 	Person person;
