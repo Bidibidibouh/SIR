@@ -22,8 +22,6 @@ public class PersonDAO implements GenericDAO<Person,Long>{
 			
 		}
 		public Person create(Person p) {
-		
-
 			EntityTransaction tx = manager.getTransaction();
 			tx.begin();
 			manager.persist(p);

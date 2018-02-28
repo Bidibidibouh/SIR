@@ -3,6 +3,6 @@
 <body>
 	Nom : <%= request.getAttribute("nom") %> </br>
 	Prenom : <%= request.getAttribute("prenom") %></br>
-	Age : <%= request.getAttribute("age") %>
+	Mail : <%= request.getAttribute("mail") %>
 </body>
 </html>

@@ -22,7 +22,7 @@ public class MyServlet extends HttpServlet {
             throws ServletException, IOException {
             
         PrintWriter p = new PrintWriter(resp.getOutputStream());
-        p.print("Yo, t'es comme un frr pr moi");
+        p.print("Hello world");
         p.flush();
         
     }
