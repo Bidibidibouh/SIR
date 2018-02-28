@@ -49,4 +49,8 @@ public class Home {
 	public void setHeaters(Collection<Heater> heaters) {
 		this.heaters = heaters;
 	}	
+	
+	public void addHeaters(Heater heater){
+		this.heaters.add(heater);
+	}
 }

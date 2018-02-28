@@ -15,7 +15,7 @@ import javax.persistence.NamedQuery;
 public class Heater {
 	
 	long id_heater;
-	long consoMoyenneDeGaz;
+	long consoMoyenne;
 
 	@Id @GeneratedValue
 	public long getIdHeater() {
@@ -26,11 +26,11 @@ public class Heater {
 		this.id_heater = id;
 	}
 	
-	public long getConsoMoyenneDeGaz() {
-		return consoMoyenneDeGaz;
+	public long getConsoMoyenne() {
+		return consoMoyenne;
 	}
 
-	public void setConsoMoyenneDeGaz(long consoMoyenneDeGaz) {
-		this.consoMoyenneDeGaz = consoMoyenneDeGaz;
+	public void setConsoMoyenne(long consoMoyenneDeGaz) {
+		this.consoMoyenne = consoMoyenne;
 	}
 }
