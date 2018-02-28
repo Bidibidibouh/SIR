@@ -1,4 +1,4 @@
-package rest;
+package fr.istic.sir.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -22,10 +22,8 @@ public class SampleWebService {
 	public Home getHome() {
 		Home h = new Home();
 		h.setIdHome(1);
-		Heater h1 = new Heater();
-		h1.setConsoMoyenne(500);
-		Heater h2 = new Heater();
-		h2.setConsoMoyenne(600);
+		Heater h1 = new Heater(1,500);
+		Heater h2 = new Heater(2,600);
 		h.addHeaters(h1);
 		h.addHeaters(h2);
 		return h;

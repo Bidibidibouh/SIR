@@ -10,7 +10,7 @@
         <init-param>
             <param-name>com.sun.jersey.config.property.packages</param-name>
             <param-value>
-                src/main/java/rest
+                fr.istic.sir.rest
              </param-value>
         </init-param>
                 <init-param>
