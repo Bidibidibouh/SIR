@@ -12,7 +12,7 @@ import javax.persistence.NamedQuery;
 
 
 })
-public class Heater extends SmartDevice {
+public class Heater{
 	
 	public Heater() {
 		super();

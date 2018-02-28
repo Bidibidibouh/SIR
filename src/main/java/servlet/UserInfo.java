@@ -27,7 +27,7 @@ public class UserInfo extends HttpServlet {
 	                " <LI>Prenom: "
 	                + request.getParameter("firstname") + "\n" +
 	                " <LI>Age: "
-	                + request.getParameter("age") + "\n" +
+	                + request.getParameter("mail") + "\n" +
 	                "</UL>\n" +                
 	        "</BODY></HTML>");
 	}

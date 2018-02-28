@@ -9,10 +9,18 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
-public class ElectronicDevice extends SmartDevice{
+public class ElectronicDevice{
 
-	public ElectronicDevice(long id) {
-		super(id);
+	public ElectronicDevice() {
+		super();
+	}
+
+	public ElectronicDevice(long id_ed, Person person, long consomoyenne, Collection<ReseauSocial> reseausoc) {
+		super();
+		this.id_ed = id_ed;
+		this.person = person;
+		this.consomoyenne = consomoyenne;
+		this.reseausoc = reseausoc;
 	}
 
 	long id_ed;
