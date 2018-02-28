@@ -11,6 +11,10 @@ import javax.persistence.OneToMany;
 @Entity
 public class ElectronicDevice extends SmartDevice{
 
+	public ElectronicDevice(long id) {
+		super(id);
+	}
+
 	long id_ed;
 	Person person;
 	long consomoyenne;

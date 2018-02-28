@@ -12,8 +12,18 @@ import javax.persistence.NamedQuery;
 
 
 })
-public class Heater {
+public class Heater extends SmartDevice {
 	
+	public Heater() {
+		super();
+	}
+
+	public Heater(long id_heater, long consoMoyenne) {
+		super();
+		this.id_heater = id_heater;
+		this.consoMoyenne = consoMoyenne;
+	}
+
 	long id_heater;
 	long consoMoyenne;
 

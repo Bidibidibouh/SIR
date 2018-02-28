@@ -10,6 +10,18 @@ import javax.persistence.ManyToMany;
 @Entity
 public class Home {
 	
+	public Home() {
+		super();
+	}
+
+	public Home(long id_home, long taille, int nbPieces, Collection<Heater> heaters) {
+		super();
+		this.id_home = id_home;
+		this.taille = taille;
+		this.nbPieces = nbPieces;
+		this.heaters = heaters;
+	}
+
 	long id_home;
 	long taille;
 	int nbPieces;

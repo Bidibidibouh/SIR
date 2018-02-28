@@ -1,12 +1,23 @@
 package jpa;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+@Entity
 public class SmartDevice {
 
-	long id_ed;
+	public SmartDevice() {
+		super();
+	}
 
+
+	long id_ed;
+	
+	public SmartDevice(long id){
+		this.id_ed = id;
+	}
+	
 	@Id
 	@GeneratedValue
 	public long getId_ed() {

@@ -17,6 +17,10 @@ import javax.persistence.OneToMany;
 })
 public class Person {
 	
+	public Person() {
+		super();
+	}
+
 	long id_pers;
 	String nom;
 	String prenom;
@@ -24,7 +28,20 @@ public class Person {
 	Collection<Home> homes;
 	Collection<Person> friends;
 	Collection<ElectronicDevice> devices;
+
 	
+
+	public Person(long id_pers, String nom, String prenom, String mail, Collection<Home> homes,
+			Collection<Person> friends, Collection<ElectronicDevice> devices) {
+		super();
+		this.id_pers = id_pers;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.mail = mail;
+		this.homes = homes;
+		this.friends = friends;
+		this.devices = devices;
+	}
 
 	@Id @GeneratedValue
 	public long getIdPers() {

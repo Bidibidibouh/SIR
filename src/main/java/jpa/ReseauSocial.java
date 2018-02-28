@@ -8,6 +8,18 @@ import javax.persistence.ManyToOne;
 @Entity
 public class ReseauSocial {
 	
+	public ReseauSocial(long id_rs, ElectronicDevice ed, String nomreseau, long consoreseau) {
+		super();
+		this.id_rs = id_rs;
+		this.ed = ed;
+		this.nomreseau = nomreseau;
+		this.consoreseau = consoreseau;
+	}
+
+	public ReseauSocial() {
+		super();
+	}
+
 	long id_rs;
 	ElectronicDevice ed;
 	String nomreseau;
